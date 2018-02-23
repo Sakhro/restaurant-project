@@ -53,7 +53,7 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
     name.innerHTML = restaurant.name;
 
     const address = document.getElementById('restaurant-address');
-    address.innerHTML = restaurant.address;
+    address.innerHTML = '<i class="fas fa-map-marker-alt"></i> ' + restaurant.address;
 
     const image = document.getElementById('restaurant-img');
     image.className = 'restaurant-img';
@@ -84,7 +84,7 @@ fillRestaurantHoursHTML = (operatingHours = self.restaurant.operating_hours) => 
         row.appendChild(day);
 
         const time = document.createElement('td');
-        time.innerHTML = operatingHours[key];
+        time.innerHTML = '<i class="far fa-clock"></i> ' + operatingHours[key];
         row.appendChild(time);
 
         hours.appendChild(row);
