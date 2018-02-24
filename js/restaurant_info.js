@@ -1,6 +1,10 @@
 let restaurant;
 var map;
 
+document.addEventListener('DOMContentLoaded', () => {
+    SWController.serviceWorker()
+});
+
 /**
  * Initialize Google map, called from HTML.
  */
