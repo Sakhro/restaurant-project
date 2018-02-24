@@ -18,8 +18,8 @@
             <h1><a href="/">Restaurant Reviews</a></h1>
         </nav>
         <!-- Beginning breadcrumb -->
-        <ul id="breadcrumb">
-            <li><a href="/">Home</a></li>
+        <ul id="breadcrumb" aria-label="breadcrumb" role="menu">
+            <li role="menuitem"><a href="/">Home</a></li>
         </ul>
         <!-- End breadcrumb -->
         <!-- End nav -->
@@ -29,23 +29,23 @@
     <!-- Beginning main -->
     <main id="maincontent" class="fx-container">
         <!-- Beginning map -->
-        <section id="map-container" class="fx-item fx-item-md">
-            <div id="map"></div>
+        <section id="map-container" class="fx-item fx-item-md" >
+            <div id="map" tabindex="-1" aria-hidden="true"></div>
         </section>
         <!-- End map -->
         <div class="fx-item fx-item-md">
             <!-- Beginning restaurant -->
             <section id="restaurant-container">
-                <h1 id="restaurant-name"></h1>
+                <h1 id="restaurant-name" tabindex="0"></h1>
                 <img id="restaurant-img">
                 <p id="restaurant-cuisine"></p>
-                <p id="restaurant-address"></p>
+                <p id="restaurant-address" tabindex="0"></p>
                 <table id="restaurant-hours"></table>
             </section>
             <!-- end restaurant -->
             <!-- Beginning reviews -->
             <section id="reviews-container">
-                <ul id="reviews-list"></ul>
+                <ul id="reviews-list" aria-labelledby="reviews-title" tabindex="0"></ul>
             </section>
             <!-- End reviews -->
         </div>

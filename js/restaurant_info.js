@@ -57,7 +57,7 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
     name.innerHTML = restaurant.name;
 
     const address = document.getElementById('restaurant-address');
-    address.innerHTML = '<i class="fas fa-map-marker-alt"></i> ' + restaurant.address;
+    address.innerHTML = '<i class="fas fa-map-marker-alt" aria-hidden="true"></i> ' + restaurant.address;
 
     const image = document.getElementById('restaurant-img');
     image.className = 'restaurant-img';
@@ -85,10 +85,12 @@ fillRestaurantHoursHTML = (operatingHours = self.restaurant.operating_hours) => 
 
         const day = document.createElement('td');
         day.innerHTML = key;
+        day.setAttribute('tabindex', 0);
         row.appendChild(day);
 
         const time = document.createElement('td');
-        time.innerHTML = '<i class="far fa-clock"></i> ' + operatingHours[key];
+        time.innerHTML = '<i class="far fa-clock" aria-hidden="true"></i> ' + operatingHours[key];
+        time.setAttribute('tabindex', 0);
         row.appendChild(time);
 
         hours.appendChild(row);
@@ -102,6 +104,7 @@ fillReviewsHTML = (reviews = self.restaurant.reviews) => {
     const container = document.getElementById('reviews-container');
     const title = document.createElement('h2');
     title.innerHTML = 'Reviews';
+    title.id = 'reviews-title';
     container.appendChild(title);
 
     if (!reviews) {
@@ -122,6 +125,7 @@ fillReviewsHTML = (reviews = self.restaurant.reviews) => {
  */
 createReviewHTML = (review) => {
     const li = document.createElement('li');
+    li.setAttribute('tabindex', 0);
     const header = document.createElement('header');
     header.className = 'review-header';
 
