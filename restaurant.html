@@ -15,6 +15,7 @@
     <header>
         <!-- Beginning nav -->
         <nav class="header-nav">
+            <a href="#restaurant-container" class="skip-link" onclick="skipTo('restaurant-container')">Skip to restaurant content</a>
             <h1><a href="/">Restaurant Reviews</a></h1>
         </nav>
         <!-- Beginning breadcrumb -->
@@ -30,12 +31,12 @@
     <main id="maincontent" class="fx-container">
         <!-- Beginning map -->
         <section id="map-container" class="fx-item fx-item-md" >
-            <div id="map" tabindex="-1" aria-hidden="true"></div>
+            <div id="map"></div>
         </section>
         <!-- End map -->
         <div class="fx-item fx-item-md">
             <!-- Beginning restaurant -->
-            <section id="restaurant-container">
+            <section id="restaurant-container" tabindex="-1">
                 <h1 id="restaurant-name" tabindex="0"></h1>
                 <img id="restaurant-img">
                 <p id="restaurant-cuisine"></p>

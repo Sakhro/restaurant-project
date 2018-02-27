@@ -180,4 +180,13 @@ addMarkersToMap = (restaurants = self.restaurants) => {
     });
 };
 
+/**
+ * SkipLink
+ */
+skipTo = (e) => {
+    const skipContainer = document.getElementById(e);
+    skipContainer.focus();
+};
+
+
 
