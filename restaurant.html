@@ -4,9 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="//necolas.github.io/normalize.css/8.0.0/normalize.css"/>
     <script defer src="//use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <meta name="theme-color" content="#2c3e50">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="manifest" href="manifest.json">
     <title>Restaurant Info</title>
 </head>
 
@@ -30,14 +31,14 @@
     <!-- Beginning main -->
     <main id="maincontent" class="fx-container">
         <!-- Beginning map -->
-        <section id="map-container" class="fx-item fx-item-md" >
+        <section id="map-container" class="fx-item fx-item-md" role="application">
             <div id="map"></div>
         </section>
         <!-- End map -->
         <div class="fx-item fx-item-md">
             <!-- Beginning restaurant -->
             <section id="restaurant-container" tabindex="-1">
-                <h1 id="restaurant-name" tabindex="0"></h1>
+                <h2 id="restaurant-name" tabindex="0"></h2>
                 <img id="restaurant-img">
                 <p id="restaurant-cuisine"></p>
                 <p id="restaurant-address" tabindex="0"></p>

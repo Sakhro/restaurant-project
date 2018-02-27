@@ -5,6 +5,9 @@ self.addEventListener('install', (event) => {
         caches.open(staticCacheName).then( (cache) => {
             return cache.addAll([
                 '/',
+                '/index.html',
+                '/restaurant.html',
+                '/manifest.json',
                 'css/styles.css',
                 'data/restaurants.json',
                 'js/dbhelper.js',
