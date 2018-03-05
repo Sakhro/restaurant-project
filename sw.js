@@ -9,7 +9,6 @@ self.addEventListener('install', (event) => {
                 '/restaurant.html',
                 '/manifest.json',
                 'css/styles.css',
-                'data/restaurants.json',
                 'js/dbhelper.js',
                 'js/swcontroller.js',
                 'js/main.js',
