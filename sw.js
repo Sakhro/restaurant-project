@@ -9,6 +9,7 @@ self.addEventListener('install', (event) => {
                 '/restaurant.html',
                 '/manifest.json',
                 'css/styles.css',
+                'js/idb.js',
                 'js/dbhelper.js',
                 'js/swcontroller.js',
                 'js/main.js',
@@ -21,8 +22,10 @@ self.addEventListener('install', (event) => {
 });
 
 self.addEventListener('fetch', (event) => {
+
     event.respondWith(
         caches.match(event.request).then(function(response) {
+            console.log(response);
             return response || fetch(event.request);
         })
     );
