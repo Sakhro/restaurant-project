@@ -17,45 +17,51 @@ class DBHelper {
      */
     static fetchRestaurants(callback) {
         const idb = new IndexedDB();
-        let xhr = new XMLHttpRequest();
-        xhr.open('GET', DBHelper.DATABASE_URL);
-        xhr.onload = () => {
-            if (xhr.status === 200) { // Got a success response from server!
-                const restaurants = JSON.parse(xhr.responseText);
-                idb.putToDB(restaurants);
-                callback(null, restaurants);
-            } else { // Oops!. Got an error from server.
-                const error = (`Request failed. Returned status of ${xhr.status}`);
-                callback(error, null);
-            }
-        };
-        xhr.onerror = () => {
-            if (idb) {
-                idb.getFromDB().then( data => {
-                    callback(null, data);
-                });
-            };
-        };
-        xhr.send();
+        fetch(DBHelper.DATABASE_URL)
+            .then( data => {
+                data.json().then(restaurants => {
+                    if (restaurants) {
+                        idb.putToDB(restaurants);
+                        callback(null, restaurants);
+                    } else { // Restaurant does not exist in the database
+                        callback('Restaurant does not exist', null);
+                    }
+                })
+            })
+            .catch( error => {
+                if (!idb) {
+                    callback(error, null);
+                } else {
+                    idb.getFromDB().then( data => {
+                        callback(null, data);
+                    });
+                }
+            });
     }
 
     /**
      * Fetch a restaurant by its ID.
      */
     static fetchRestaurantById(id, callback) {
-        // fetch all restaurants with proper error handling.
-        DBHelper.fetchRestaurants((error, restaurants) => {
-            if (error) {
-                callback(error, null);
-            } else {
-                const restaurant = restaurants.find(r => r.id == id);
-                if (restaurant) { // Got the restaurant
-                    callback(null, restaurant);
-                } else { // Restaurant does not exist in the database
-                    callback('Restaurant does not exist', null);
+        const idb = new IndexedDB();
+        fetch(`http://localhost:1337/restaurants/${id}`)
+            .then( data => {
+                data.json().then(restaurant => {
+                    if (restaurant) {
+                        callback(null, restaurant);
+                    } else { // Restaurant does not exist in the database
+                        callback('Restaurant does not exist', null);
+                    }
+                })
+            }).catch( error => {
+                if (!idb) {
+                    callback(error, null);
+                } else {
+                    idb.getFromDBbyId(id).then( data => {
+                        callback(null, data);
+                    });
                 }
-            }
-        });
+            });
     }
 
     /**
@@ -99,7 +105,7 @@ class DBHelper {
             if (error) {
                 callback(error, null);
             } else {
-                let results = restaurants
+                let results = restaurants;
                 if (cuisine != 'all') { // filter by cuisine
                     results = results.filter(r => r.cuisine_type == cuisine);
                 }
@@ -205,10 +211,18 @@ class IndexedDB extends DBHelper {
     }
 
     getFromDB() {
-        return this.openDatabase().then(function (db) {
+        return this.openDatabase().then( db => {
             if (!db) return;
             let store = db.transaction('restaurants').objectStore('restaurants');
             return store.getAll()
+        })
+    }
+
+    getFromDBbyId(id) {
+        return this.openDatabase().then( db => {
+            if (!db) return;
+            let store = db.transaction('restaurants').objectStore('restaurants');
+            return store.get(parseInt(id));
         })
     }
 }
