@@ -187,6 +187,9 @@ class DBHelper {
 
 class IndexedDB extends DBHelper {
 
+    /**
+     * Open Indexed DB
+     */
     openDatabase() {
         if (!navigator.serviceWorker) {
             return Promise.resolve();
@@ -198,6 +201,10 @@ class IndexedDB extends DBHelper {
         });
     };
 
+    /**
+     * Put restaurants to the DB from server
+     * @param restaurants
+     */
     putToDB(restaurants) {
         this.openDatabase().then(function (db) {
             if (!db) return;
@@ -210,6 +217,9 @@ class IndexedDB extends DBHelper {
         })
     }
 
+    /**
+     * Get all restaurants from Indexed DB
+     */
     getFromDB() {
         return this.openDatabase().then( db => {
             if (!db) return;
@@ -218,6 +228,10 @@ class IndexedDB extends DBHelper {
         })
     }
 
+    /**
+     * Get restaurant from Indexed DB by id
+     * @param id
+     */
     getFromDBbyId(id) {
         return this.openDatabase().then( db => {
             if (!db) return;
