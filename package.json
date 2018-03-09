@@ -7,7 +7,10 @@
   "dependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
+    "gulp-babel-minify": "^0.3.0",
+    "gulp-concat": "^2.6.1",
     "gulp-imagemin": "^4.1.0",
+    "gulp-js-minify": "0.0.3",
     "gulp-sass": "^3.1.0",
     "include-all": "^1.0.0",
     "rc": "1.0.1",

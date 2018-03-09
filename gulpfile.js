@@ -1,11 +1,14 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
+const minify = require('gulp-babel-minify');
+const concat = require('gulp-concat');
 const autoprefixer = require('gulp-autoprefixer');
 const imagemin = require('gulp-imagemin');
 
 
 gulp.task('default', () => {
-    gulp.watch('css/sass/*.scss', ['styles'])
+    gulp.watch('css/sass/*.scss', ['styles']);
+    gulp.watch('js/dev/*.js', ['scripts'])
 });
 
 gulp.task('styles', () => {
@@ -23,4 +26,14 @@ gulp.task('images', () => {
             imagemin.jpegtran({progressive: true}),
         ]))
         .pipe(gulp.dest('./img'))
+});
+
+gulp.task('scripts', () => {
+    gulp.src('js/dev/*.js')
+        .pipe(minify({
+            mangle: {
+                keepClassName: true
+            }
+        }))
+        .pipe(gulp.dest('./js'))
 });

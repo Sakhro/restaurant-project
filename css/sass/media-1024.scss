@@ -1,0 +1,26 @@
+@media screen and (min-width: 1024px) {
+
+  #restaurants-list {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  #restaurants-list {
+    li {
+      flex-basis: calc((100% - 252px) / 3);
+    }
+  }
+
+  .fx-item-md {
+    flex-basis: 50%;
+  }
+
+  .inside #map-container {
+    order: 1;
+    position: fixed;
+    width: 50%;
+    right: 0;
+    height: 100%;
+  }
+
+}

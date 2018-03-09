@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <script defer src="//use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <meta name="theme-color" content="#2c3e50">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/media-500.css" media="(min-width: 500px)">
+    <link rel="stylesheet" href="css/media-1024.css" media="(min-width: 1024px)">
     <link rel="manifest" href="manifest.json">
     <title>Restaurant Info</title>
 </head>
@@ -61,17 +62,15 @@
     <!-- End footer -->
 
     <!-- Beginning scripts -->
+    <script type="application/javascript" src="js/idb.js"></script>
     <!-- Database helpers -->
     <script type="text/javascript" src="js/dbhelper.js"></script>
-    <!-- ServiceWorker script -->
-    <script type="application/javascript" src="js/swcontroller.js"></script>
-
-    <script type="application/javascript" src="js/idb.js"></script>
     <!-- Main javascript file -->
     <script type="text/javascript" src="js/restaurant_info.js"></script>
     <!-- Google Maps -->
     <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyXjdWoppnIWXDlumDM5xfLoS3CDjjJqg&libraries=places&callback=initMap"></script>
+    <script async defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <!-- End scripts -->
 
 </body>

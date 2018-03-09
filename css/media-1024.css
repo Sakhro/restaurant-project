@@ -1,0 +1,1 @@
+@media screen and (min-width: 1024px){#restaurants-list{max-width:1024px;margin:0 auto}#restaurants-list li{-ms-flex-preferred-size:calc((100% - 252px) / 3);flex-basis:calc((100% - 252px) / 3)}.fx-item-md{-ms-flex-preferred-size:50%;flex-basis:50%}.inside #map-container{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1;position:fixed;width:50%;right:0;height:100%}}
