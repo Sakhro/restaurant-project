@@ -32,9 +32,7 @@ class DBHelper {
         const idb = new IndexedDB();
 
         idb.getFromDB(callback).then( () => {
-            if (idb) {
-                return;
-            }
+
             fetch(DBHelper.DATABASE_URL)
                 .then( data => {
                     data.json().then(restaurants => {
