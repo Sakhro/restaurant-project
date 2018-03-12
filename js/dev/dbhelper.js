@@ -75,7 +75,24 @@ class DBHelper {
                     callback(error, null);
             });
         });
+    }
 
+    /**
+     * Fetch all reviews for specific restaurant
+     */
+    static getAllReviewsByRestaurantId(id, callback) {
+        fetch(`http://localhost:1337/reviews/?restaurant_id=${id}`)
+            .then( data => {
+                data.json().then(restaurant => {
+                    if (restaurant) {
+                        callback(null, restaurant);
+                    } else { // Restaurant does not exist in the database
+                        callback('Reviews does not exist', null);
+                    }
+                })
+            }).catch( error => {
+            callback(error, null);
+        });
     }
 
     /**
