@@ -57,13 +57,13 @@ class DBHelper {
     static fetchRestaurantById(id, callback) {
         const idb = new IndexedDB();
 
-        idb.getFromDBbyId(id, callback).then( () => {
-            if (idb) {
+        idb.getFromDBbyId(id).then( data => {
+            if (data) {
+                callback(null, data);
                 return;
             }
             fetch(`http://localhost:1337/restaurants/${id}`)
                 .then( data => {
-                    console.log(data);
                     data.json().then(restaurant => {
                         if (restaurant) {
                             callback(null, restaurant);
@@ -248,15 +248,11 @@ class IndexedDB extends DBHelper {
     /**
      * Get restaurant from Indexed DB by id
      * @param id
-     * @param callback
      */
-    getFromDBbyId(id, callback) {
+    getFromDBbyId(id) {
         return this.openDatabase().then( db => {
-            if (!db) return;
             let store = db.transaction('restaurants').objectStore('restaurants');
-            return store.get(parseInt(id)).then( data => {
-                callback(null, data);
-            });
+            return store.get(parseInt(id));
         })
     }
 }
