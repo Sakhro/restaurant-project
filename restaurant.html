@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="theme-color" content="#2c3e50">
+    <meta name="theme-color" content="#38191e">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/media-500.css" media="(min-width: 500px)">
     <link rel="stylesheet" href="css/media-1024.css" media="(min-width: 1024px)">
@@ -14,10 +15,10 @@
 
 <body class="inside">
     <!-- Beginning header -->
-    <header>
+    <header class="main-header">
         <!-- Beginning nav -->
         <nav class="header-nav">
-            <a href="#restaurant-container" class="skip-link" onclick="skipTo('restaurant-container')">Skip to restaurant content</a>
+            <a href="#restaurant-name" class="skip-link" onclick="skipTo('restaurant-name')">Skip to restaurant content</a>
             <h1><a href="/">Restaurant Reviews</a></h1>
         </nav>
         <!-- Beginning breadcrumb -->
@@ -32,14 +33,17 @@
     <!-- Beginning main -->
     <main id="maincontent" class="fx-container">
         <!-- Beginning map -->
-        <section id="map-container" class="fx-item fx-item-md" role="application" aria-label="Map container">
+        <section id="map-container" class="col-xs-12 col-lg-6" role="application" aria-label="Map container">
             <div id="map"></div>
         </section>
         <!-- End map -->
-        <div class="fx-item fx-item-md">
+        <div class="col-xs-12 col-lg-6">
             <!-- Beginning restaurant -->
             <section id="restaurant-container" tabindex="-1">
-                <h2 id="restaurant-name" tabindex="0"></h2>
+                <header>
+                    <h2 id="restaurant-name" tabindex="0"></h2>
+                    <div id="favorite"></div>
+                </header>
                 <img id="restaurant-img">
                 <p id="restaurant-cuisine"></p>
                 <p id="restaurant-address" tabindex="0"></p>
@@ -47,6 +51,37 @@
             </section>
             <!-- end restaurant -->
             <!-- Beginning reviews -->
+            <section id="review-form-section">
+                <h3 id="review-form-title">Leave the review</h3>
+                <form method="post" class="fx-container" aria-labelledby="review-form-title" id="review-form" tabindex="0">
+                    <div class="form-group col-xs-12 col-md-6">
+                        <label> Name <br>
+                            <input type="text" placeholder="Your Name here" name="name" required>
+                        </label>
+                    </div>
+                    <fieldset id="review-rating" class="form-group col-xs-12 col-md-6">
+                        <legend> Your rating </legend>
+                        <label><input type="radio" name="rating" required value="1">1</label>
+                        <label><input type="radio" name="rating" value="2">2</label>
+                        <label><input type="radio" name="rating" value="3">3</label>
+                        <label><input type="radio" name="rating" value="4">4</label>
+                        <label><input type="radio" name="rating" value="5">5</label>
+                    </fieldset>
+                    <div class="form-group col-xs-12">
+                        <label> Comments <br>
+                            <textarea name="comments" id="" rows="5"
+                                      placeholder="Leave your comments about the restaurant here" required></textarea>
+                        </label>
+                    </div>
+                    <div class="form-group fx-container align-items-center">
+                        <button type="submit">Submit</button>
+                        <div id="spinner">
+                            <i class="fas fa-spinner fa-2x fa-spin"></i>
+                        </div>
+                        <p id="submitted-message">Review was submitted!</p>
+                    </div>
+                </form>
+            </section>
             <section id="reviews-container">
                 <ul id="reviews-list" aria-labelledby="reviews-title" tabindex="0"></ul>
             </section>
@@ -62,15 +97,14 @@
     <!-- End footer -->
 
     <!-- Beginning scripts -->
-    <script type="application/javascript" src="js/idb.js"></script>
+    <script type="application/javascript" src="js/dev/idb.js"></script>
     <!-- Database helpers -->
-    <script type="text/javascript" src="js/dbhelper.js"></script>
+    <script type="text/javascript" src="js/dev/dbhelper.js"></script>
     <!-- Main javascript file -->
-    <script type="text/javascript" src="js/restaurant_info.js"></script>
+    <script type="text/javascript" src="js/dev/restaurant_info.js"></script>
     <!-- Google Maps -->
     <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyXjdWoppnIWXDlumDM5xfLoS3CDjjJqg&libraries=places&callback=initMap"></script>
-    <script async defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <!-- End scripts -->
 
 </body>

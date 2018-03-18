@@ -6,6 +6,7 @@ var markers = [];
 
 
 DBHelper.serviceWorker();
+DBHelper.fetchReviews();
 
 /**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
@@ -165,6 +166,19 @@ createRestaurantHTML = (restaurant) => {
     more.href = DBHelper.urlForRestaurant(restaurant);
     li.append(more);
 
+    const favorite = document.createElement('div');
+    favorite.addEventListener('click', togFav);
+    favorite.addEventListener('keydown', togFavKey);
+    favorite.setAttribute('data-id', restaurant.id);
+    favorite.className = `favorite-icon ${restaurant.is_favorite ? 'checked' : ''}`;
+    favorite.setAttribute('aria-checked', !!restaurant.is_favorite);
+    favorite.setAttribute('aria-label', 'Mark restaurant as favorite');
+    favorite.setAttribute('tabindex', 0);
+    favorite.setAttribute('role', "checkbox");
+    favorite.innerHTML = restaurant.is_favorite ? '<i class="fas fa-star fa-2x"></i>' : '<i class="far fa-star fa-2x"></i>';
+
+    li.append(favorite);
+
     return li
 };
 
@@ -190,5 +204,39 @@ skipTo = (e) => {
     skipContainer.focus();
 };
 
-
-
+/**
+ * Toggle favorite restaurant
+ */
+togFav = (e) => {
+    const iconBox = e.target.parentNode;
+    const id = iconBox.dataset.id;
+    if (iconBox.classList.contains('checked')) {
+        iconBox.innerHTML = '<i class="far fa-star fa-2x"></i>';
+        iconBox.classList.remove('checked');
+        iconBox.setAttribute('aria-checked', false);
+        DBHelper.addFavoriteRestaurant(id, false)
+    } else {
+        iconBox.innerHTML = '<i class="fas fa-star fa-2x"></i>';
+        iconBox.classList.add('checked');
+        iconBox.setAttribute('aria-checked', true);
+        DBHelper.addFavoriteRestaurant(id, true)
+    }
+};
+togFavKey = (e) => {
+    if (e.keyCode  === 32) {
+        e.preventDefault();
+        const iconBox = e.target;
+        const id = iconBox.dataset.id;
+        if (iconBox.classList.contains('checked')) {
+            iconBox.innerHTML = '<i class="far fa-star fa-2x"></i>';
+            iconBox.classList.remove('checked');
+            iconBox.setAttribute('aria-checked', false);
+            DBHelper.addFavoriteRestaurant(id, false)
+        } else {
+            iconBox.innerHTML = '<i class="fas fa-star fa-2x"></i>';
+            iconBox.classList.add('checked');
+            iconBox.setAttribute('aria-checked', true);
+            DBHelper.addFavoriteRestaurant(id, true)
+        }
+    }
+};

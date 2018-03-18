@@ -1,6 +1,5 @@
-const staticCacheName = 'v2';
+const staticCacheName = 'v3';
 const contentImgsCache = 'content-imgs';
-
 
 self.addEventListener('install', (event) => {
     event.waitUntil(
@@ -13,10 +12,11 @@ self.addEventListener('install', (event) => {
                 'css/styles.css',
                 'css/media-500.css',
                 'css/media-1024.css',
-                'js/idb.js',
-                'js/dbhelper.js',
-                'js/main.js',
-                'js/restaurant_info.js'
+                'js/dev/idb.js',
+                'js/dev/dbhelper.js',
+                'js/dev/main.js',
+                'js/dev/restaurant_info.js',
+                'https://use.fontawesome.com/releases/v5.0.8/css/all.css',
             ]);
         }).catch( (error) => {
             console.log(error);

@@ -5,23 +5,45 @@
   }
 
   #restaurants-list {
+
     li {
       flex-basis: calc((100% - 168px) / 2);
     }
+
+  }
+
+  .col-md-6 {
+    flex-basis: 50%;
+  }
+
+  #review-form-section {
+
+    .col-md-6 {
+      flex-basis: calc((100% - 40px) / 2);
+    }
+
   }
 
   .filter-options {
+
     select {
       height: 35px;
     }
+
   }
 
   #restaurants-list {
+
     li {
+
       a {
         font-size: 10pt;
+        padding: 10px 30px;
       }
+
     }
+
   }
+
 
 }
