@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="#38191e">
-    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="preload" as="style" onload="this.rel='stylesheet'">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/media-500.css" media="(min-width: 500px)">
     <link rel="stylesheet" href="css/media-1024.css" media="(min-width: 1024px)">
@@ -31,7 +31,7 @@
     <!-- End header -->
 
     <!-- Beginning main -->
-    <main id="maincontent" class="fx-container">
+    <main id="maincontent" class="fx-container" role="main">
         <!-- Beginning map -->
         <section id="map-container" class="col-xs-12 col-lg-6" role="application" aria-label="Map container">
             <div id="map"></div>

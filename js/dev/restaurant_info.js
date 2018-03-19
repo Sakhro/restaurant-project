@@ -290,7 +290,6 @@ submitReview = e => {
         }, 5000)
     });
 
-
     const ul = document.getElementById('reviews-list');
 
     ul.prepend(createReviewHTML(review));

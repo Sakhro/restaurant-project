@@ -4,25 +4,15 @@
     <list default="true" id="f1de7f61-335e-4e2e-a69e-42c353b2b25a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/.tmp/localDiskDb.db" afterPath="$PROJECT_DIR$/.tmp/localDiskDb.db" />
-      <change beforePath="$PROJECT_DIR$/config/blueprints.js" afterPath="$PROJECT_DIR$/config/blueprints.js" />
-      <change beforePath="$PROJECT_DIR$/css/media-1024.css" afterPath="$PROJECT_DIR$/css/media-1024.css" />
-      <change beforePath="$PROJECT_DIR$/css/media-500.css" afterPath="$PROJECT_DIR$/css/media-500.css" />
-      <change beforePath="$PROJECT_DIR$/css/sass/media-1024.scss" afterPath="$PROJECT_DIR$/css/sass/media-1024.scss" />
-      <change beforePath="$PROJECT_DIR$/css/sass/media-500.scss" afterPath="$PROJECT_DIR$/css/sass/media-500.scss" />
       <change beforePath="$PROJECT_DIR$/css/sass/styles.scss" afterPath="$PROJECT_DIR$/css/sass/styles.scss" />
-      <change beforePath="$PROJECT_DIR$/css/sass/variables.scss" afterPath="$PROJECT_DIR$/css/sass/variables.scss" />
       <change beforePath="$PROJECT_DIR$/css/styles.css" afterPath="$PROJECT_DIR$/css/styles.css" />
-      <change beforePath="$PROJECT_DIR$/css/variables.css" afterPath="" />
       <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change beforePath="$PROJECT_DIR$/js/dbhelper.js" afterPath="$PROJECT_DIR$/js/dbhelper.js" />
-      <change beforePath="$PROJECT_DIR$/js/dev/dbhelper.js" afterPath="$PROJECT_DIR$/js/dev/dbhelper.js" />
       <change beforePath="$PROJECT_DIR$/js/dev/main.js" afterPath="$PROJECT_DIR$/js/dev/main.js" />
       <change beforePath="$PROJECT_DIR$/js/dev/restaurant_info.js" afterPath="$PROJECT_DIR$/js/dev/restaurant_info.js" />
       <change beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
       <change beforePath="$PROJECT_DIR$/js/restaurant_info.js" afterPath="$PROJECT_DIR$/js/restaurant_info.js" />
-      <change beforePath="$PROJECT_DIR$/manifest.json" afterPath="$PROJECT_DIR$/manifest.json" />
       <change beforePath="$PROJECT_DIR$/restaurant.html" afterPath="$PROJECT_DIR$/restaurant.html" />
-      <change beforePath="$PROJECT_DIR$/sw.js" afterPath="$PROJECT_DIR$/sw.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,119 +26,41 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/dev/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="242" column="0" lean-forward="false" selection-start-line="242" selection-start-column="0" selection-end-line="242" selection-end-column="0" />
+            <state relative-caret-position="328">
+              <caret line="252" column="10" lean-forward="true" selection-start-line="252" selection-start-column="10" selection-end-line="252" selection-end-column="10" />
               <folding>
-                <element signature="e#399#653#0" expanded="false" />
-                <element signature="e#755#1044#0" expanded="false" />
-                <element signature="e#1119#1349#0" expanded="false" />
-                <element signature="e#1431#1696#0" expanded="false" />
-                <element signature="e#1774#2016#0" expanded="false" />
-                <element signature="e#2101#2701#0" expanded="false" />
-                <element signature="e#2819#3099#0" expanded="false" />
-                <element signature="e#3228#3415#0" expanded="false" />
-                <element signature="e#3492#5049#0" expanded="false" />
-                <element signature="e#5165#5483#0" expanded="false" />
-                <element signature="e#5522#5606#0" expanded="false" />
-                <element signature="e#5663#6231#0" expanded="false" />
-                <element signature="e#6252#6924#0" expanded="false" />
+                <element signature="e#398#652#0" expanded="false" />
+                <element signature="e#754#1043#0" expanded="false" />
+                <element signature="e#1118#1348#0" expanded="false" />
+                <element signature="e#1430#1695#0" expanded="false" />
+                <element signature="e#1773#2015#0" expanded="false" />
+                <element signature="e#2100#2700#0" expanded="false" />
+                <element signature="e#2818#3098#0" expanded="false" />
+                <element signature="e#3507#5084#0" expanded="false" />
+                <element signature="e#5200#5518#0" expanded="false" />
+                <element signature="e#5557#5641#0" expanded="false" />
+                <element signature="e#5698#6266#0" expanded="false" />
+                <element signature="e#6287#6959#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="restaurant_info.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/dev/restaurant_info.js">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="289" column="16" lean-forward="true" selection-start-line="289" selection-start-column="16" selection-end-line="289" selection-end-column="16" />
-              <folding>
-                <element signature="e#158#619#0" expanded="false" />
-                <element signature="e#710#1305#0" expanded="false" />
-                <element signature="e#1423#2920#0" expanded="false" />
-                <element signature="e#3086#3654#0" expanded="false" />
-                <element signature="e#4824#5750#0" expanded="false" />
-                <element signature="e#5869#6047#0" expanded="false" />
-                <element signature="e#6136#6472#0" expanded="false" />
-                <element signature="e#6515#6599#0" expanded="false" />
-                <element signature="e#6656#7225#0" expanded="false" />
-                <element signature="e#7246#7917#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="102">
+              <caret line="6" column="129" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="129" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="restaurant.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="restaurant.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/restaurant.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="75" column="13" lean-forward="true" selection-start-line="75" selection-start-column="13" selection-end-line="75" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="localDiskDb.db" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.tmp/localDiskDb.db">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="511" column="22" lean-forward="true" selection-start-line="511" selection-start-column="22" selection-end-line="511" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="styles.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/sass/styles.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="498" column="1" lean-forward="false" selection-start-line="498" selection-start-column="1" selection-end-line="498" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dbhelper.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/dev/dbhelper.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="41">
-              <caret line="331" column="31" lean-forward="false" selection-start-line="331" selection-start-column="31" selection-end-line="331" selection-end-column="31" />
-              <folding>
-                <element signature="n#!!block;n#DATABASE_URL#0;n#DBHelper#0" expanded="false" />
-                <element signature="n#!!block;n#serviceWorker#0;n#DBHelper#0" expanded="false" />
-                <element signature="n#!!block;n#fetchReviews#0;n#DBHelper#0" expanded="false" />
-                <element signature="n#!!block;n#fetchRestaurantById#0;n#DBHelper#0" expanded="false" />
-                <element signature="n#!!block;n#fetchReviewsByRestaurantId#0;n#DBHelper#0" expanded="false" />
-                <element signature="n#!!block;n#fetchRestaurantByNeighborhood#0;n#DBHelper#0" expanded="false" />
-                <element signature="n#!!block;n#fetchRestaurantByCuisineAndNeighborhood#0;n#DBHelper#0" expanded="false" />
-                <element signature="n#!!block;n#fetchNeighborhoods#0;n#DBHelper#0" expanded="false" />
-                <element signature="n#!!block;n#fetchCuisines#0;n#DBHelper#0" expanded="false" />
-                <element signature="n#!!block;n#addFavoriteRestaurant#0;n#DBHelper#0" expanded="false" />
-                <element signature="n#!!block;n#postReviewsFromDB#0;n#DBHelper#0" expanded="false" />
-                <element signature="n#!!block;n#urlForRestaurant#0;n#DBHelper#0" expanded="false" />
-                <element signature="n#!!block;n#imageUrlForRestaurant#0;n#DBHelper#0" expanded="false" />
-                <element signature="n#!!block;n#mapMarkerForRestaurant#0;n#DBHelper#0" expanded="false" />
-                <element signature="n#!!block;n#openDatabase#0;n#IndexedDB#0" expanded="false" />
-                <element signature="n#!!block;n#putRestaurantsToDB#0;n#IndexedDB#0" expanded="false" />
-                <element signature="n#!!block;n#putReviewsToDB#0;n#IndexedDB#0" expanded="false" />
-                <element signature="n#!!block;n#putReviewToDB#0;n#IndexedDB#0" expanded="false" />
-                <element signature="n#!!block;n#postSubmittedReviewToDB#0;n#IndexedDB#0" expanded="false" />
-                <element signature="n#!!block;n#deleteSubmittedReviewsFromDB#0;n#IndexedDB#0" expanded="false" />
-                <element signature="n#!!block;n#checkSubmittedReviewsInDB#0;n#IndexedDB#0" expanded="false" />
-                <element signature="n#!!block;n#toggleFavoriteRestaurantInDB#0;n#IndexedDB#0" expanded="false" />
-                <element signature="n#!!block;n#getFromDB#0;n#IndexedDB#0" expanded="false" />
-                <element signature="n#!!block;n#getRestaurantFromDBbyId#0;n#IndexedDB#0" expanded="false" />
-                <element signature="n#!!block;n#getReviewsFromDBbyRestaurantId#0;n#IndexedDB#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sw.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sw.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="40" column="61" lean-forward="false" selection-start-line="40" selection-start-column="61" selection-end-line="40" selection-end-column="61" />
+            <state relative-caret-position="119">
+              <caret line="7" column="129" lean-forward="false" selection-start-line="7" selection-start-column="129" selection-end-line="7" selection-end-column="129" />
               <folding />
             </state>
           </provider>
@@ -220,16 +132,16 @@
         <option value="$PROJECT_DIR$/css/sass/media-500.scss" />
         <option value="$PROJECT_DIR$/css/sass/variables.scss" />
         <option value="$PROJECT_DIR$/js/dev/test.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/dev/idb.js" />
         <option value="$PROJECT_DIR$/config/blueprints.js" />
-        <option value="$PROJECT_DIR$/js/dev/main.js" />
         <option value="$PROJECT_DIR$/sw.js" />
-        <option value="$PROJECT_DIR$/restaurant.html" />
-        <option value="$PROJECT_DIR$/js/dev/restaurant_info.js" />
         <option value="$PROJECT_DIR$/js/dev/dbhelper.js" />
-        <option value="$PROJECT_DIR$/css/sass/styles.scss" />
+        <option value="$PROJECT_DIR$/js/dev/restaurant_info.js" />
         <option value="$PROJECT_DIR$/.tmp/localDiskDb.db" />
+        <option value="$PROJECT_DIR$/css/sass/styles.scss" />
+        <option value="$PROJECT_DIR$/js/dev/main.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/restaurant.html" />
       </list>
     </option>
   </component>
@@ -271,7 +183,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -283,34 +194,18 @@
             <path>
               <item name="mws-restaurant-stage-3" type="b2602c69:ProjectViewProjectNode" />
               <item name="mws-restaurant-stage-3" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name=".tmp" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="mws-restaurant-stage-3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mws-restaurant-stage-3" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="mws-restaurant-stage-3" type="b2602c69:ProjectViewProjectNode" />
               <item name="mws-restaurant-stage-3" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="sass" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="mws-restaurant-stage-3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mws-restaurant-stage-3" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="mws-restaurant-stage-3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mws-restaurant-stage-3" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="dev" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -398,17 +293,18 @@
       <workItem from="1521128301728" duration="24023000" />
       <workItem from="1521201549064" duration="16168000" />
       <workItem from="1521286944673" duration="6221000" />
+      <workItem from="1521390478564" duration="6908000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="232783000" />
+    <option name="totallyTimeSpent" value="239691000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23298033" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23676248" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -416,7 +312,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18518518" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18364197" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -446,19 +342,18 @@
         <state relative-caret-position="1088">
           <caret line="192" column="0" lean-forward="false" selection-start-line="192" selection-start-column="0" selection-end-line="192" selection-end-column="0" />
           <folding>
-            <element signature="e#399#653#0" expanded="false" />
-            <element signature="e#755#1044#0" expanded="false" />
-            <element signature="e#1119#1349#0" expanded="false" />
-            <element signature="e#1431#1696#0" expanded="false" />
-            <element signature="e#1774#2016#0" expanded="false" />
-            <element signature="e#2101#2701#0" expanded="false" />
-            <element signature="e#2819#3099#0" expanded="false" />
-            <element signature="e#3228#3415#0" expanded="false" />
-            <element signature="e#3492#5049#0" expanded="false" />
-            <element signature="e#5165#5483#0" expanded="false" />
-            <element signature="e#5522#5606#0" expanded="false" />
-            <element signature="e#5663#6231#0" expanded="false" />
-            <element signature="e#6252#6924#0" expanded="false" />
+            <element signature="e#398#652#0" expanded="false" />
+            <element signature="e#754#1043#0" expanded="false" />
+            <element signature="e#1118#1348#0" expanded="false" />
+            <element signature="e#1430#1695#0" expanded="false" />
+            <element signature="e#1773#2015#0" expanded="false" />
+            <element signature="e#2100#2700#0" expanded="false" />
+            <element signature="e#2818#3098#0" expanded="false" />
+            <element signature="e#3227#3430#0" expanded="false" />
+            <element signature="e#5200#5518#0" expanded="false" />
+            <element signature="e#5557#5641#0" expanded="false" />
+            <element signature="e#5698#6266#0" expanded="false" />
+            <element signature="e#6287#6959#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -544,19 +439,18 @@
         <state relative-caret-position="3468">
           <caret line="204" column="18" lean-forward="false" selection-start-line="204" selection-start-column="18" selection-end-line="204" selection-end-column="18" />
           <folding>
-            <element signature="e#399#653#0" expanded="false" />
-            <element signature="e#755#1044#0" expanded="false" />
-            <element signature="e#1119#1349#0" expanded="false" />
-            <element signature="e#1431#1696#0" expanded="false" />
-            <element signature="e#1774#2016#0" expanded="false" />
-            <element signature="e#2101#2701#0" expanded="false" />
-            <element signature="e#2819#3099#0" expanded="false" />
-            <element signature="e#3228#3415#0" expanded="false" />
-            <element signature="e#3492#5049#0" expanded="false" />
-            <element signature="e#5165#5483#0" expanded="false" />
-            <element signature="e#5522#5606#0" expanded="false" />
-            <element signature="e#5663#6231#0" expanded="false" />
-            <element signature="e#6252#6924#0" expanded="false" />
+            <element signature="e#398#652#0" expanded="false" />
+            <element signature="e#754#1043#0" expanded="false" />
+            <element signature="e#1118#1348#0" expanded="false" />
+            <element signature="e#1430#1695#0" expanded="false" />
+            <element signature="e#1773#2015#0" expanded="false" />
+            <element signature="e#2100#2700#0" expanded="false" />
+            <element signature="e#2818#3098#0" expanded="false" />
+            <element signature="e#3227#3430#0" expanded="false" />
+            <element signature="e#5200#5518#0" expanded="false" />
+            <element signature="e#5557#5641#0" expanded="false" />
+            <element signature="e#5698#6266#0" expanded="false" />
+            <element signature="e#6287#6959#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -773,14 +667,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/dev/test.js" />
-    <entry file="file://$PROJECT_DIR$/js/dbhelper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="75" lean-forward="false" selection-start-line="0" selection-start-column="75" selection-end-line="0" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/dev/idb.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
@@ -866,14 +752,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/idb.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -910,40 +788,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/dev/main.js">
+    <entry file="file://$PROJECT_DIR$/.tmp/localDiskDb.db">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="242" column="0" lean-forward="false" selection-start-line="242" selection-start-column="0" selection-end-line="242" selection-end-column="0" />
-          <folding>
-            <element signature="e#399#653#0" expanded="false" />
-            <element signature="e#755#1044#0" expanded="false" />
-            <element signature="e#1119#1349#0" expanded="false" />
-            <element signature="e#1431#1696#0" expanded="false" />
-            <element signature="e#1774#2016#0" expanded="false" />
-            <element signature="e#2101#2701#0" expanded="false" />
-            <element signature="e#2819#3099#0" expanded="false" />
-            <element signature="e#3228#3415#0" expanded="false" />
-            <element signature="e#3492#5049#0" expanded="false" />
-            <element signature="e#5165#5483#0" expanded="false" />
-            <element signature="e#5522#5606#0" expanded="false" />
-            <element signature="e#5663#6231#0" expanded="false" />
-            <element signature="e#6252#6924#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="184">
+          <caret line="562" column="15" lean-forward="true" selection-start-line="562" selection-start-column="15" selection-end-line="562" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/restaurant.html">
+    <entry file="file://$PROJECT_DIR$/css/sass/styles.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="75" column="13" lean-forward="true" selection-start-line="75" selection-start-column="13" selection-end-line="75" selection-end-column="13" />
+        <state relative-caret-position="430">
+          <caret line="494" column="0" lean-forward="true" selection-start-line="494" selection-start-column="0" selection-end-line="494" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/dev/restaurant_info.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="289" column="16" lean-forward="true" selection-start-line="289" selection-start-column="16" selection-end-line="289" selection-end-column="16" />
+        <state relative-caret-position="362">
+          <caret line="291" column="0" lean-forward="false" selection-start-line="291" selection-start-column="0" selection-end-line="291" selection-end-column="0" />
           <folding>
             <element signature="e#158#619#0" expanded="false" />
             <element signature="e#710#1305#0" expanded="false" />
@@ -961,7 +825,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/dev/dbhelper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
+        <state relative-caret-position="17">
           <caret line="331" column="31" lean-forward="false" selection-start-line="331" selection-start-column="31" selection-end-line="331" selection-end-column="31" />
           <folding>
             <element signature="n#!!block;n#DATABASE_URL#0;n#DBHelper#0" expanded="false" />
@@ -993,18 +857,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/sass/styles.scss">
+    <entry file="file://$PROJECT_DIR$/js/dbhelper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="498" column="1" lean-forward="false" selection-start-line="498" selection-start-column="1" selection-end-line="498" selection-end-column="1" />
+        <state relative-caret-position="0">
+          <caret line="0" column="75" lean-forward="false" selection-start-line="0" selection-start-column="75" selection-end-line="0" selection-end-column="75" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.tmp/localDiskDb.db">
+    <entry file="file://$PROJECT_DIR$/js/dev/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="511" column="22" lean-forward="true" selection-start-line="511" selection-start-column="22" selection-end-line="511" selection-end-column="22" />
+        <state relative-caret-position="328">
+          <caret line="252" column="10" lean-forward="true" selection-start-line="252" selection-start-column="10" selection-end-line="252" selection-end-column="10" />
+          <folding>
+            <element signature="e#398#652#0" expanded="false" />
+            <element signature="e#754#1043#0" expanded="false" />
+            <element signature="e#1118#1348#0" expanded="false" />
+            <element signature="e#1430#1695#0" expanded="false" />
+            <element signature="e#1773#2015#0" expanded="false" />
+            <element signature="e#2100#2700#0" expanded="false" />
+            <element signature="e#2818#3098#0" expanded="false" />
+            <element signature="e#3507#5084#0" expanded="false" />
+            <element signature="e#5200#5518#0" expanded="false" />
+            <element signature="e#5557#5641#0" expanded="false" />
+            <element signature="e#5698#6266#0" expanded="false" />
+            <element signature="e#6287#6959#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="129" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="129" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restaurant.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="129" lean-forward="false" selection-start-line="7" selection-start-column="129" selection-end-line="7" selection-end-column="129" />
           <folding />
         </state>
       </provider>

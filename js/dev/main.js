@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
     fetchNeighborhoods();
     fetchCuisines();
 });
-
 /**
  * Fetch all neighborhoods and set their HTML.
  */
@@ -134,6 +133,7 @@ fillRestaurantsHTML = (restaurants = self.restaurants) => {
         ul.append(createRestaurantHTML(restaurant));
     });
     addMarkersToMap();
+    lazyLoad();
 };
 
 /**
@@ -145,7 +145,7 @@ createRestaurantHTML = (restaurant) => {
     const image = document.createElement('img');
     image.className = 'restaurant-img';
     image.alt = restaurant.alt;
-    image.src = DBHelper.imageUrlForRestaurant(restaurant);
+    image.setAttribute('data-src', DBHelper.imageUrlForRestaurant(restaurant));
     li.append(image);
 
     const name = document.createElement('h3');
@@ -239,4 +239,17 @@ togFavKey = (e) => {
             DBHelper.addFavoriteRestaurant(id, true)
         }
     }
+};
+
+/**
+ * Lazy loading
+ */
+lazyLoad = () => {
+    const imgs = document.querySelectorAll('img[data-src]');
+    imgs.forEach( img => {
+        img.setAttribute('src', img.getAttribute('data-src'));
+        img.onload = () => {
+            img.removeAttribute('data-src');
+        };
+    });
 };
