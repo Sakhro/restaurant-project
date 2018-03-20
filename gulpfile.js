@@ -7,33 +7,33 @@ const imagemin = require('gulp-imagemin');
 
 
 gulp.task('default', () => {
-    gulp.watch('css/sass/*.scss', ['styles']);
-    gulp.watch('js/dev/*.js', ['scripts'])
+    gulp.watch('client/css/sass/*.scss', ['styles']);
+    gulp.watch('client/js/dev/*.js', ['scripts'])
 });
 
 gulp.task('styles', () => {
-    gulp.src('css/sass/*.scss')
+    gulp.src('client/css/sass/*.scss')
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(autoprefixer({
             browsers: ['last 2 versions']
         }))
-        .pipe(gulp.dest('./css'));
+        .pipe(gulp.dest('./client/css'));
 });
 
 gulp.task('images', () => {
-    gulp.src('img/img_src/*')
+    gulp.src('client/img/img_src/*')
         .pipe(imagemin([
             imagemin.jpegtran({progressive: true}),
         ]))
-        .pipe(gulp.dest('./img'))
+        .pipe(gulp.dest('./client/img'))
 });
 
 gulp.task('scripts', () => {
-    gulp.src('js/dev/*.js')
+    gulp.src('client/js/dev/*.js')
         .pipe(minify({
             mangle: {
                 keepClassName: true
             }
         }))
-        .pipe(gulp.dest('./js'))
+        .pipe(gulp.dest('./client/js'))
 });

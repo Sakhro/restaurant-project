@@ -97,8 +97,8 @@
           "Sunday": "Sat - 10:30 pm"
         },
         "createdAt": 1504095567091,
-        "updatedAt": "2018-03-15T20:03:21.468Z",
-        "is_favorite": false,
+        "updatedAt": "2018-03-20T15:43:00.836Z",
+        "is_favorite": true,
         "id": 4
       },
       {
@@ -222,8 +222,8 @@
           "Sunday": "5:00 pm - 10:00 pm"
         },
         "createdAt": 1504095567191,
-        "updatedAt": 1504095567191,
-        "is_favorite": false,
+        "updatedAt": "2018-03-20T15:42:59.391Z",
+        "is_favorite": true,
         "id": 9
       },
       {

@@ -9,13 +9,13 @@ self.addEventListener('install', (event) => {
                 '/index.html',
                 '/restaurant.html',
                 '/manifest.json',
-                'css/styles.css',
-                'css/media-500.css',
-                'css/media-1024.css',
-                'js/dev/idb.js',
-                'js/dev/dbhelper.js',
-                'js/dev/main.js',
-                'js/dev/restaurant_info.js',
+                'client/css/styles.css',
+                'client/css/media-500.css',
+                'client/css/media-1024.css',
+                'client/js/idb.js',
+                'client/js/dbhelper.js',
+                'client/js/main.js',
+                'client/js/restaurant_info.js',
                 'https://use.fontawesome.com/releases/v5.0.8/css/all.css',
             ]);
         }).catch( (error) => {
@@ -31,7 +31,7 @@ self.addEventListener('fetch', (event) => {
             event.respondWith(caches.match('/restaurant.html'));
             return;
         }
-        if (requestUrl.pathname.startsWith('/img/')) {
+        if (requestUrl.pathname.startsWith('/client/img/')) {
             event.respondWith(servePhoto(event.request));
             return;
         }
